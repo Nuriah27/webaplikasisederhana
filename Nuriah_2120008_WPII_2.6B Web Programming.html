@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nuriah_2120008_WPII_2.6B</title>
+    <style>
+        /*CSS style */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #inputfiled {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #displayArea {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        </style>
+        </head>
+        <body>
+            <!-- HTML content -->
+            <input type="text" id="inputFiled" placeholder="Enter text...">
+            <button onclick="displayText()">Display</button>
+            <div id="displayArea"></div>
+
+            <!-- JavaScript code-->
+            <script>
+                function displayText() {
+                    // Get the input value
+                    var inputText = document.getElementById("inputFiled").value;
+
+                    // Get the display area
+                    var displayArea = document.getElementById("displayArea");
+
+                    // Display the input value
+                    displayArea.innerText = inputText;
+                }
+            </script>
+        </body>
+</html>
